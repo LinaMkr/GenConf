@@ -1,0 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package classs;
+
+import java.util.HashMap;
+
+/**
+ *
+ * @author belhadas
+ */
+public class Utilisateur {
+    private String email;
+    private String nom;
+    private String prenom;
+    private HashMap<String,Conference> conferencesAdministrees;
+    
+    public Utilisateur(){
+        setEmail(email);
+    }
+    
+    
+    public Utilisateur(String email, String nom, String prenom){
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+        setEmail(email);
+        
+       
+    }
+    
+    public String getPrenom(){
+        return prenom;
+    }
+    
+    public String getNom(){
+        return nom;
+    }
+    
+    public String getEmail(){
+        return email;
+    }
+    
+    public void setEmail(String email){
+        if (getEmail() == null){
+            this.email = email;
+        }else{
+            this.email = this.email;
+        }
+    }
+    
+    public void setNom(String nom){
+        this.nom = nom;
+    }
+    
+    public void setPrenom(String prenom){
+        this.prenom = prenom;
+    }
+    
+    public void ajouteConferenceAdministree(Conference Conference){
+        assert !this.conferencesAdministrees.containsKey(conf.getNom());
+        this.conferencesAdministrees.put(conf.getNom(), conf);
+
+    }
+    
+    public void addCommunication(Utilisateur c){
+        if (c.getEmail() != null){
+            communication.put(c.getEmail());
+        }
+    }
+
+}
